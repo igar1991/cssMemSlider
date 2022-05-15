@@ -78,7 +78,7 @@ input {
 }
 
 .wrapper-text {
-    width: 20vw;
+    width: 25%;
     overflow: hidden;
 }
 .meme-text {
@@ -124,4 +124,24 @@ input {
 
 #m4:checked ~ .wrapper-footer .wrapper-text .meme-text {
     margin-left: -300%;
+}
+
+input:target .wrapper-footer .slider-buttons > label span {
+    background-color: rgb(170, 170, 218);
+}
+
+#m1:checked ~ .wrapper-footer .slider-buttons > label:nth-child(1) span {
+    background-color: rgb(170, 170, 218);
+}
+
+#m2:checked ~ .wrapper-footer .slider-buttons > label:nth-child(2) span {
+    background-color: rgb(170, 170, 218);
+}
+
+#m3:checked ~ .wrapper-footer .slider-buttons > label:nth-child(3) span {
+    background-color: rgb(170, 170, 218);
+}
+
+#m4:checked ~ .wrapper-footer .slider-buttons > label:nth-child(4) span {
+    background-color: rgb(170, 170, 218);
 }
