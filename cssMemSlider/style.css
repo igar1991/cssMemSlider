@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    min-height: 100vh;
+}
+
+input {
+    display: none;
+}
+
+.wrapper {
+    background-color: rgb(48, 43, 36);
+    padding: 2vw;
+    border-radius: 1%;
+
+}
+
+.wrapper-slider {
+    width: 60vw;
+    height:40vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1%;
+    
+}
+
+.wrapper-footer {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+   height: 100%;
+   width: 400%;
+   display: flex;
+   transition: 0.3s ease-out;
+}
+
+.slider > img {
+    height: 100%;
+    width: 25%;
+    object-fit: cover;
+    transition: 0.5s ease-out;
+}
+
+.slider-buttons {
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-buttons label {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-buttons label span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: .1vw solid white;
+    border-radius: 50%;
+}
+
+.slider-buttons label:hover span {
+    background-color: rgb(170, 170, 218);
+}
+
+.wrapper-text {
+    width: 20vw;
+    overflow: hidden;
+}
+.meme-text {
+    display: flex;
+    width: 400%;
+    transition: 0.3s ease;
+
+}
+
+.meme-text p {
+    width: 100%;
+    font-size: 1.5vw;
+    color: aliceblue;
+}
+
+#m1:checked ~ .wrapper-slider .slider {
+    margin-left: 0%;
+}
+
+#m2:checked ~ .wrapper-slider .slider {
+    margin-left: -100%;
+}
+
+#m3:checked ~ .wrapper-slider .slider {
+    margin-left: -200%;
+}
+
+#m4:checked ~ .wrapper-slider .slider {
+    margin-left: -300%;
+}
+
+#m1:checked ~ .wrapper-footer .wrapper-text .meme-text {
+    margin-left: 0%;
+}
+
+#m2:checked ~ .wrapper-footer .wrapper-text .meme-text {
+    margin-left: -100%;
+}
+
+#m3:checked ~ .wrapper-footer .wrapper-text .meme-text {
+    margin-left: -200%;
+}
+
+#m4:checked ~ .wrapper-footer .wrapper-text .meme-text {
+    margin-left: -300%;
+}
