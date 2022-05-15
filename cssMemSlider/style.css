@@ -21,6 +21,8 @@ input {
 }
 
 .wrapper-slider {
+    max-height: 60vh;
+    max-width: 90vh;
     width: 60vw;
     height:40vw;
     position: relative;
@@ -32,6 +34,7 @@ input {
 .wrapper-footer {
     display: flex;
     width: 60vw;
+    max-width: 90vh;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
